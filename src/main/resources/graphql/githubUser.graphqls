@@ -1,0 +1,35 @@
+type GithubUser {
+    login: String!,
+    id: Int,
+    nodeId: String,
+    avatarUrl: String,
+    gravatarId: String,
+    url: String,
+    htmlUrl: String,
+    followersUrl: String,
+    followingUrl: String,
+    gistsUrl: String,
+    starredUrl: String,
+    subscriptionsUrl: String,
+    organizationsUrl: String,
+    reposUrl: String,
+    eventsUrl: String,
+    receivedEventsUrl: String,
+    name: String,
+    company: String,
+    blog: String,
+    location: String,
+    email: String,
+    hireable: String,
+    bio: String,
+    publicRepos: Int,
+    publicGists: Int,
+    followers: Int,
+    following: Int,
+    createdAt: String,
+    updatedAt: String
+}
+
+type Query {
+    user(userName: String!): GithubUser
+}

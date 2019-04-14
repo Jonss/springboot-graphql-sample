@@ -15,7 +15,7 @@ class GraphqlSampleApplication {
 	@Autowired
 	private lateinit var githubService: GithubService
 
-	@GetMapping("/")
+	@GetMapping("/git/user")
 	fun findUser(@RequestParam("userName") userName: String) = githubService.fetchUser(userName)
 
 }
